@@ -36,7 +36,6 @@ public class WebConfiguration {
         registration.addUrlPatterns("/*");
 
         registration.addInitParameter("paramName", "paramValue");
-
         registration.setName("MyFilter");
         //过滤顺序，从小到大
         registration.setOrder(1);

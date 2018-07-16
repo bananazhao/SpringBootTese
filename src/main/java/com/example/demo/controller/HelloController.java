@@ -1,8 +1,13 @@
 package com.example.demo.controller;
 
 import com.example.demo.domain.User;
+import com.example.demo.domain.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author JIAOJIAO
@@ -14,11 +19,4 @@ public class HelloController {
         return "HelloWorld";
     }
 
-    @RequestMapping("getUser")
-    public User getUser() {
-        User user=new User();
-        user.setUserName("小明");
-        user.setPassWord("xxxx");
-        return user;
-    }
 }
